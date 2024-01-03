@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    tools:context=".AddToDoPopUpFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/todoEt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginVertical="40dp"
+        android:background="@drawable/button_bordered"
+        android:hint="@string/type_your_task"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="#787878"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/cancelTask"
+            style="@style/ededittextheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="10dp"
+            android:text="Cancel"
+            android:textAppearance="@style/you_can_eas" />
+
+        <TextView
+            android:id="@+id/todoNextBtn"
+            style="@style/ededittextheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="10dp"
+            android:text="Add"
+            android:textAppearance="@style/you_can_eas" />
+    </LinearLayout>
+
+
+</LinearLayout>
